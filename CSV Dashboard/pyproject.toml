@@ -1,0 +1,27 @@
+[project]
+name = "csv-dashboard"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Achinta Hazra", email = "achintahazra8515@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.5",
+    "plotly>=7.0.0",
+    "streamlit>=1.62.0",
+]
+
+[project.scripts]
+csv-dashboard = "csv_dashboard:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "nbformat>=5.11.1",
+]
